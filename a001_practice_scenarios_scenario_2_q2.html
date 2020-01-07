@@ -116,15 +116,7 @@ else
 function init() {
   findWH()
   if( is.min ){
-    var titleMgr = getTitleMgrHandle()
-    if( titleMgr ) {
-      if( !titleMgr.loadTest( '_tobj70083', 'a001_practice_scenarios', 'a001_practice_scenarios_scenario_2_q2.html' )) {
-        var gotoPage = titleMgr.cancelTest( 'a001_practice_scenarios' )
-        if( gotoPage && gotoPage != '' ) trivExitPage( gotoPage, false )
-      }
-    }
     trivPageTracking.InitPageTracking();
-    if( parent.document != document) parent.document.title=document.title
     PreloadResources(new Array(text70128,image70127,button77107,button77204,image70134,image70132,image70130,button70124,button70120,button70118,button70116,button70114,button97519,image77118,shape77116,image77114,image77112,text77110,text77109,image72830,text72833,text72891,text72902,qu72836,text72837,text72838,radio72839,text72840,radio72841,text72842,radio72843,og77201,image77203,image77207,text77208))
     pageLayer = new ObjLayer(GetCurrentPageID());
     pageLayer.show(true);

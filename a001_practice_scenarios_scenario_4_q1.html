@@ -124,15 +124,7 @@ else
 function init() {
   findWH()
   if( is.min ){
-    var titleMgr = getTitleMgrHandle()
-    if( titleMgr ) {
-      if( !titleMgr.loadTest( '_tobj70083', 'a001_practice_scenarios', 'a001_practice_scenarios_scenario_4_q1.html' )) {
-        var gotoPage = titleMgr.cancelTest( 'a001_practice_scenarios' )
-        if( gotoPage && gotoPage != '' ) trivExitPage( gotoPage, false )
-      }
-    }
     trivPageTracking.InitPageTracking();
-    if( parent.document != document) parent.document.title=document.title
     PreloadResources(new Array(text70128,image70127,button77910,button78677,image70134,image70132,image70130,button70124,button70120,button70118,button70116,button70114,button97544,image73421,image77921,shape77919,shape78389,image78621,image77915,text77913,text77912,text73424,text78592,qu78143,text78148,image78146,text78149,text78150,text78151,text78152,text78153,og78674,image78676,image78693,text78681))
     pageLayer = new ObjLayer(GetCurrentPageID());
     pageLayer.show(true);
@@ -353,14 +345,14 @@ function doImmFeedback( objId ) {
       }
       if( !wrong ) {
     { //1 
-        trivActFBCnt++; action78143_3(onAfterFBAction);  return 0;
+        trivActFBCnt++; action78143_5(onAfterFBAction);  return 0;
   } //1
 
   
     }
       if( wrong ) {
     { //2 
-trivActFBCnt++; action78143_4(onAfterFBAction);return 0;  } //2 
+trivActFBCnt++; action78143_6(onAfterFBAction);return 0;  } //2 
 
   
     }
@@ -508,13 +500,13 @@ function Update_qu78143() {
   doImmFeedback('qu78143');
 }
 
-function action78143_3(fn){
+function action78143_5(fn){
     text73424.actionShow(); 
     if(fn && typeof(fn) == 'string' ) eval(fn);
     else if(fn && typeof(fn) == 'function' ) fn();
 }
 
-function action78143_4(fn){
+function action78143_6(fn){
     text78592.actionShow(); 
     if(fn && typeof(fn) == 'string' ) eval(fn);
     else if(fn && typeof(fn) == 'function' ) fn();

@@ -116,15 +116,7 @@ else
 function init() {
   findWH()
   if( is.min ){
-    var titleMgr = getTitleMgrHandle()
-    if( titleMgr ) {
-      if( !titleMgr.loadTest( '_tobj70083', 'a001_practice_scenarios', 'a001_practice_scenarios_scenario_4_q2.html' )) {
-        var gotoPage = titleMgr.cancelTest( 'a001_practice_scenarios' )
-        if( gotoPage && gotoPage != '' ) trivExitPage( gotoPage, false )
-      }
-    }
     trivPageTracking.InitPageTracking();
-    if( parent.document != document) parent.document.title=document.title
     PreloadResources(new Array(text70128,image70127,button78732,button78759,image70134,image70132,image70130,button70124,button70120,button70118,button70116,button70114,button97555,image78743,image73612,text73615,text78780,shape78741,image78739,image78737,text78735,text78734,qu73621,text73622,text73623,radio73624,text73625,radio73626,og78756,image78758,image78762,text78763))
     pageLayer = new ObjLayer(GetCurrentPageID());
     pageLayer.show(true);
@@ -315,11 +307,11 @@ function doImmFeedback( objId ) {
   if(!qu73621.hasBeenProcessed) {
     if( ans_VarQuestion_0025 != '\u0062\u0029\u0020\u0045\u006E\u0073\u0075\u0072\u0065\u0020\u0079\u006F\u0075\u0020\u0061\u0072\u0065\u0020\u0069\u006E\u0020\u0061\u0020\u0073\u0061\u0066\u0065\u0020\u0070\u006C\u0061\u0063\u0065\u0020\u0061\u006E\u0064\u0020\u0077\u0068\u0069\u006C\u0065\u0020\u0066\u0061\u0063\u0069\u006E\u0067\u0020\u0074\u0068\u0065\u0020\u0074\u0072\u0061\u0069\u006E\u002C\u0020\u0061\u0063\u006B\u006E\u006F\u0077\u006C\u0065\u0064\u0067\u0065\u0020\u0074\u0068\u0065\u0020\u0054\u0072\u0061\u0069\u006E\u0020\u0044\u0072\u0069\u0076\u0065\u0072\u0020\u0077\u0069\u0074\u0068\u0020\u0061\u0020\u0063\u006C\u0065\u0061\u0072\u0020\u0068\u0061\u006E\u0064\u0073\u0069\u0067\u006E\u0061\u006C' && ans_VarQuestion_0025 != '~~~null~~~' ) 
     { //2 
-trivActFBCnt++; action73621_3(onAfterFBAction);return 0;  } //2 
+trivActFBCnt++; action73621_5(onAfterFBAction);return 0;  } //2 
 
     else if( ans_VarQuestion_0025 == '\u0062\u0029\u0020\u0045\u006E\u0073\u0075\u0072\u0065\u0020\u0079\u006F\u0075\u0020\u0061\u0072\u0065\u0020\u0069\u006E\u0020\u0061\u0020\u0073\u0061\u0066\u0065\u0020\u0070\u006C\u0061\u0063\u0065\u0020\u0061\u006E\u0064\u0020\u0077\u0068\u0069\u006C\u0065\u0020\u0066\u0061\u0063\u0069\u006E\u0067\u0020\u0074\u0068\u0065\u0020\u0074\u0072\u0061\u0069\u006E\u002C\u0020\u0061\u0063\u006B\u006E\u006F\u0077\u006C\u0065\u0064\u0067\u0065\u0020\u0074\u0068\u0065\u0020\u0054\u0072\u0061\u0069\u006E\u0020\u0044\u0072\u0069\u0076\u0065\u0072\u0020\u0077\u0069\u0074\u0068\u0020\u0061\u0020\u0063\u006C\u0065\u0061\u0072\u0020\u0068\u0061\u006E\u0064\u0073\u0069\u0067\u006E\u0061\u006C' ) 
     { //1 
-        trivActFBCnt++; action73621_4(onAfterFBAction);  return 0;
+        trivActFBCnt++; action73621_6(onAfterFBAction);  return 0;
   } //1
 
     }
@@ -447,13 +439,13 @@ function Update_qu73621() {
    qu73621Object.hasBeenProcessed=false;
 }
 
-function action73621_3(fn){
+function action73621_5(fn){
     text78780.actionShow(); 
     if(fn && typeof(fn) == 'string' ) eval(fn);
     else if(fn && typeof(fn) == 'function' ) fn();
 }
 
-function action73621_4(fn){
+function action73621_6(fn){
     text73615.actionShow(); 
     if(fn && typeof(fn) == 'string' ) eval(fn);
     else if(fn && typeof(fn) == 'function' ) fn();

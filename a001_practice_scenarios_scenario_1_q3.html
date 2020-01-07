@@ -114,15 +114,7 @@ else
 function init() {
   findWH()
   if( is.min ){
-    var titleMgr = getTitleMgrHandle()
-    if( titleMgr ) {
-      if( !titleMgr.loadTest( '_tobj70083', 'a001_practice_scenarios', 'a001_practice_scenarios_scenario_1_q3.html' )) {
-        var gotoPage = titleMgr.cancelTest( 'a001_practice_scenarios' )
-        if( gotoPage && gotoPage != '' ) trivExitPage( gotoPage, false )
-      }
-    }
     trivPageTracking.InitPageTracking();
-    if( parent.document != document) parent.document.title=document.title
     PreloadResources(new Array(text70128,image70127,button75962,button75983,image70134,image70132,image70130,button70124,button70120,button70118,button70116,button70114,button97504,image75973,image72584,shape75971,image75969,image75967,text75965,text75964,text72587,text72643,qu72590,text76181,text76182,check76183,text76184,check76185,text76186,check76187,og75980,image75982,image76708,text75987))
     pageLayer = new ObjLayer(GetCurrentPageID());
     pageLayer.show(true);
@@ -321,12 +313,12 @@ function doImmFeedback( objId ) {
     if(!qu72590.hasBeenProcessed && qu72590Cked >= 2) {
     if( ans_VarQuestion_0019 == '\u0061\u0029\u0020\u0052\u0065\u0076\u0069\u0065\u0077\u0020\u0073\u0063\u006F\u0070\u0065\u0020\u006F\u0066\u0020\u0077\u006F\u0072\u006B\u0026\u0023\u0034\u0034\u0020\u0061\u0063\u0063\u0065\u0073\u0073\u0026\u0023\u0034\u0034\u0020\u0065\u0067\u0072\u0065\u0073\u0073\u0020\u0074\u006F\u0020\u0074\u0068\u0065\u0020\u0077\u006F\u0072\u006B\u0073\u0069\u0074\u0065\u0020\u002C\u0062\u0029\u0020\u0043\u006F\u006E\u0066\u0069\u0072\u006D\u0020\u0074\u0079\u0070\u0065\u0073\u0020\u006F\u0066\u0020\u0065\u0071\u0075\u0069\u0070\u006D\u0065\u006E\u0074\u0020\u0072\u0065\u0071\u0075\u0069\u0072\u0065\u0064\u0020\u0066\u006F\u0072\u0020\u0074\u0068\u0065\u0020\u006A\u006F\u0062\u0020\u0061\u006E\u0064\u0020\u0077\u0068\u0065\u0074\u0068\u0065\u0072\u0020\u0079\u006F\u0075\u0020\u0063\u0061\u006E\u0020\u0073\u0061\u0066\u0065\u006C\u0079\u0020\u006D\u0061\u006E\u0067\u0065\u0020\u0074\u0068\u0065\u0020\u0070\u006F\u0074\u0065\u006E\u0074\u0069\u0061\u006C\u0020\u0066\u006F\u0072\u0020\u0069\u0074\u0020\u0074\u006F\u0020\u0065\u006E\u0063\u0072\u006F\u0061\u0063\u0068\u0020\u0074\u0068\u0065\u0020\u0044\u0061\u006E\u0067\u0065\u0072\u0020\u005A\u006F\u006E\u0065\u0020' ) 
     { //1 
-        trivActFBCnt++; action72590_3(onAfterFBAction);  return 0;
+        trivActFBCnt++; action72590_5(onAfterFBAction);  return 0;
   } //1
 
     else if( ans_VarQuestion_0019 != '\u0061\u0029\u0020\u0052\u0065\u0076\u0069\u0065\u0077\u0020\u0073\u0063\u006F\u0070\u0065\u0020\u006F\u0066\u0020\u0077\u006F\u0072\u006B\u0026\u0023\u0034\u0034\u0020\u0061\u0063\u0063\u0065\u0073\u0073\u0026\u0023\u0034\u0034\u0020\u0065\u0067\u0072\u0065\u0073\u0073\u0020\u0074\u006F\u0020\u0074\u0068\u0065\u0020\u0077\u006F\u0072\u006B\u0073\u0069\u0074\u0065\u0020\u002C\u0062\u0029\u0020\u0043\u006F\u006E\u0066\u0069\u0072\u006D\u0020\u0074\u0079\u0070\u0065\u0073\u0020\u006F\u0066\u0020\u0065\u0071\u0075\u0069\u0070\u006D\u0065\u006E\u0074\u0020\u0072\u0065\u0071\u0075\u0069\u0072\u0065\u0064\u0020\u0066\u006F\u0072\u0020\u0074\u0068\u0065\u0020\u006A\u006F\u0062\u0020\u0061\u006E\u0064\u0020\u0077\u0068\u0065\u0074\u0068\u0065\u0072\u0020\u0079\u006F\u0075\u0020\u0063\u0061\u006E\u0020\u0073\u0061\u0066\u0065\u006C\u0079\u0020\u006D\u0061\u006E\u0067\u0065\u0020\u0074\u0068\u0065\u0020\u0070\u006F\u0074\u0065\u006E\u0074\u0069\u0061\u006C\u0020\u0066\u006F\u0072\u0020\u0069\u0074\u0020\u0074\u006F\u0020\u0065\u006E\u0063\u0072\u006F\u0061\u0063\u0068\u0020\u0074\u0068\u0065\u0020\u0044\u0061\u006E\u0067\u0065\u0072\u0020\u005A\u006F\u006E\u0065\u0020' && ans_VarQuestion_0019 != '~~~null~~~' ) 
     { //2 
-trivActFBCnt++; action72590_4(onAfterFBAction);return 0;  } //2 
+trivActFBCnt++; action72590_6(onAfterFBAction);return 0;  } //2 
 
     }
   }
@@ -471,13 +463,13 @@ function Update_qu72590( upd ) {
     qu72590Object.hasBeenProcessed=false;
 }
 
-function action72590_3(fn){
+function action72590_5(fn){
     text72587.actionShow(); 
     if(fn && typeof(fn) == 'string' ) eval(fn);
     else if(fn && typeof(fn) == 'function' ) fn();
 }
 
-function action72590_4(fn){
+function action72590_6(fn){
     text72643.actionShow(); 
     if(fn && typeof(fn) == 'string' ) eval(fn);
     else if(fn && typeof(fn) == 'function' ) fn();

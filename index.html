@@ -26,45 +26,21 @@ document.namespaces.add('v', 'urn:schemas-microsoft-com:vml', "#default#VML")
 </script>
 <![endif]-->
 
-<style type='text/css'>
-body { background-color:#ffffff; }
-</style>
-<script src="trivantis-strings.js" charset="UTF-8"></script>
-<script src="trivantis-titlemgr.js"></script>
 <script>
-
-<!-- 
-
-VarTrivSelCap = new Variable( 'VarTrivSelCap', 'none', 0, 0, null, null, 'assess_corridor_safety', true )
+VarTrivSelCap = new Variable( 'VarTrivSelCap', 'none', 0, 0, null, null, 'assess_corridor_safety', true );
 var pagePlayer = null;
 var bHasAutoStart = false;
-if( is.ieMac )
-  document.write( '<font size=4>(Note: Internet Explorer for the Macintosh does not support JavaScript access to applets/AJAX. This is a browser limitation, not a shortcoming of the course material. For this reason, Macintosh IE 5 users cannot access course materials incorporating JavaScript/AJAX functions. Please try accessing this course material from a non-Macintosh machine or a non-IE browser on the Macintosh.</font><br /><br />' )
-else if( !is.min )
-  document.write( 'Your browser does not support dynamic html. Please download a current version of either <a href="http://www.microsoft.com/ie/">Microsoft Internet Explorer</a> or <a href="http://www.mozilla.com/en-US/firefox/">Mozilla Firefox </a> and try visiting our site again.  Thank You.<br /><br />' )
-
-trivSetupPage();
-
-onload = init
-
-
-function init() {
-	 pagePlayer = new jsPagePlayer();
-  var titleMgr = getTitleMgrHandle()
-  if( titleMgr ) {
-    var redirPage = null
-    titleMgr.loadTest( '_tobj70083', 'a001_practice_scenarios', null )
-    redirPage = 'a001_practice_scenarios_scenario_1.html';
 var jumpToPage = getQueryParams().jmptopg;
-    redirPage = jumpToPage ? jumpToPage : redirPage;
-    setTimeout( 'pagePlayer.gotoPage("' + redirPage + '")', 1 )
-  }
+if( history && history.state && history.state.status ) jumpToPage = history.state.status;
+var firstPageName = jumpToPage ? jumpToPage : 'a001_practice_scenarios_scenario_1.html';
+function onLoad(){
+	 window.scrollTo(0,0);
+	 pagePlayer = new jsPagePlayer();
+	 pagePlayer.gotoPage(firstPageName, true);
 }
-// -->
-
 </script>
 </head>
 
-<body>
+<body onload='onLoad();' onfocus='pagePlayer.trivOnFocus();' onResize='pagePlayer.ReFlow();'>
 </body>
 </html>
