@@ -26,13 +26,11 @@ document.namespaces.add('v', 'urn:schemas-microsoft-com:vml', "#default#VML")
 </script>
 <![endif]-->
 
-<link rel="stylesheet" href="dialog.css" type="text/css" />
 <style type='text/css'>
 body { background-color:#ffffff; }
 </style>
 <script src="trivantis-strings.js" charset="UTF-8"></script>
 <script src="trivantis-titlemgr.js"></script>
-<script src="trivantis-dialog.js"></script>
 <script>
 
 <!-- 
@@ -45,7 +43,6 @@ if( is.ieMac )
 else if( !is.min )
   document.write( 'Your browser does not support dynamic html. Please download a current version of either <a href="http://www.microsoft.com/ie/">Microsoft Internet Explorer</a> or <a href="http://www.mozilla.com/en-US/firefox/">Mozilla Firefox </a> and try visiting our site again.  Thank You.<br /><br />' )
 
-trivWeb20Popups = true;
 trivSetupPage();
 
 onload = init

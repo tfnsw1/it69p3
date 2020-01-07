@@ -9,7 +9,6 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
 <link rel="stylesheet" href="trivantis.css" type="text/css" />
-<link rel="stylesheet" href="dialog.css" type="text/css" />
 <style type="text/css">
   body { background-color:#ffffff; }
 </style>
@@ -46,14 +45,12 @@ document.namespaces.add('v', 'urn:schemas-microsoft-com:vml', "#default#VML")
 <script src="trivantis-text.js"></script>
 <script src="trivantis-trans.js"></script>
 <script src="trivantis-pagetracking.js"></script>
-<script src="trivantis-dialog.js"></script>
-<script src="trivantis-strings.js" charset="UTF-8"></script>
+<script src="trivantis-strings.js"></script>
 <script>
 
 <!-- 
 var trivPageScope = {};
 var pgID = 'page1437';
-trivWeb20Popups = true;
 var trivPlayer = null;
 var bPageLoaded = false;
 var pageScale = 1;
@@ -107,9 +104,8 @@ else
 
 function init() {
   if(is.ie8)
-    trivAlert('1437', 'Assess Corridor Safety', 'Some features may not properly appear in older Web browsers. Upgrading to a current browser is recommended. Contact your course administrator if you have questions.', 'init11()');
-  else
-    init11();
+    alert('Some features may not properly appear in older Web browsers. Upgrading to a current browser is recommended. Contact your course administrator if you have questions.')
+  init11();
 }
 
 function init11() {
